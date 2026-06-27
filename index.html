@@ -354,41 +354,6 @@
 
   /* ── CONTACT ── */
   #contact { background: var(--bg2); transition: background var(--transition); }
-  .contact-wrapper { max-width: 660px; }
-  .contact-intro { color: var(--muted); line-height: 1.75; margin-bottom: 2.5rem; }
-  .contact-form { display: flex; flex-direction: column; gap: 1.25rem; }
-  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
-  @media (max-width: 520px) { .form-row { grid-template-columns: 1fr; } }
-  .form-group { display: flex; flex-direction: column; gap: 0.5rem; }
-  .form-label { font-size: 0.85rem; font-weight: 500; color: var(--muted); letter-spacing: 0.02em; }
-  .form-input, .form-textarea, .form-select {
-    background: var(--surface); border: 1px solid var(--border);
-    border-radius: 10px; padding: 0.85rem 1rem;
-    color: var(--text); font-family: 'Inter', sans-serif;
-    font-size: 0.9rem; transition: all 0.25s; outline: none;
-    resize: none; width: 100%;
-  }
-  .form-input:focus, .form-textarea:focus, .form-select:focus {
-    border-color: var(--indigo); box-shadow: 0 0 0 3px rgba(99,102,241,0.15);
-  }
-  .form-input::placeholder, .form-textarea::placeholder { color: var(--muted); opacity: 0.6; }
-  .form-textarea { min-height: 140px; }
-  .form-status {
-    display: none; padding: 1rem 1.25rem; border-radius: 10px;
-    font-size: 0.9rem; font-weight: 500;
-  }
-  .form-status.success { background: rgba(16,185,129,0.12); border: 1px solid rgba(16,185,129,0.3); color: #34d399; display: block; }
-  .form-status.error   { background: rgba(239,68,68,0.12);  border: 1px solid rgba(239,68,68,0.3);  color: #f87171; display: block; }
-  .btn-submit {
-    display: inline-flex; align-items: center; gap: 0.6rem;
-    padding: 0.9rem 2rem; border-radius: 100px;
-    background: var(--grad1); color: white;
-    font-weight: 600; font-size: 0.95rem; border: none; cursor: pointer;
-    font-family: 'Inter', sans-serif; transition: all 0.25s;
-    box-shadow: 0 4px 20px rgba(99,102,241,0.4); align-self: flex-start;
-  }
-  .btn-submit:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(99,102,241,0.5); }
-  .btn-submit:disabled { opacity: 0.65; cursor: not-allowed; transform: none; }
 
   /* ── FOOTER ── */
   footer {
